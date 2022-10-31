@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Netflix sign in</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">
+                <header>Sign in</header>
+            </div>
+           <form action="#">
+        
+            <div class="input-field" >
+                <input type="text" placeholder="Enter Email or Username" id="contact-email"   onkeyup="validateEmail()">
+                <span id="email-error" class="error"></span>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Enter your Password" id="confirm-pass" onkeyup="validatePassword()">
+                <span id="pass-error" class="error"></span>
+            </div>
+
+            <div class="input-field">
+                <input type="button" value="Sign in" id="btn" onkeyup="validateForm()">
+                <div class="field">
+                    <span id="submit-error" ></span>
+                    <p>
+                        Remember me?
+                    </p>
+                    <p class="help">
+                        Need help?
+                    </p>
+                   
+                </div>
+
+                <div class="notif">
+                    <p>New to Netflix? </p>
+                    <a href="#">Sign up now</a>
+                </div>
+                </div>
+                
+            </div>
+           </form>
+        </div>
+    </div>
+  
+   <script src="index.js"></script>
+</body>
+</html
